@@ -1,6 +1,7 @@
 package me.ghostbear.yetanotherenchantment.init;
 
 import me.ghostbear.yetanotherenchantment.Reference;
+import me.ghostbear.yetanotherenchantment.enchantment.StoneskinEnchantment;
 import me.ghostbear.yetanotherenchantment.enchantment.VampireEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.util.ResourceLocation;
@@ -17,6 +18,7 @@ public class ModEnchantments {
     private static final List<Enchantment> ENCHANTMENTS = new ArrayList<>();
 
     public static final Enchantment VAMPIRE_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "vampire_enchantment"), new VampireEnchantment());
+    public static final Enchantment STONESKIN_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "stoneskin_enchantment"), new StoneskinEnchantment());
 
     public static Enchantment register(ResourceLocation key, Enchantment enchantment) {
         enchantment.setRegistryName(key);
