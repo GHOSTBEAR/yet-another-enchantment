@@ -20,7 +20,7 @@ public class ModEnchantments {
 
     private static final List<Enchantment> ENCHANTMENTS = new ArrayList<>();
 
-    public static final Enchantment VAMPIRE_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "vampire_enchantment"), new VampireEnchantment());
+    public static final Enchantment VAMPIRE_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "lifedrain_enchantment"), new VampireEnchantment());
     public static final Enchantment STONESKIN_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "stoneskin_enchantment"), new StoneskinEnchantment());
     public static final Enchantment MAGIC_DAMAGE_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "magic_damage_enchantment"), new MagicDamageEnchantment());
 
