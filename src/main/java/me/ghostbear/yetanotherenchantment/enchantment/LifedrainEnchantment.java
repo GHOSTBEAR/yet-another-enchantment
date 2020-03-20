@@ -12,9 +12,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import java.util.Map;
 
-public class VampireEnchantment extends Enchantment {
+public class LifedrainEnchantment extends Enchantment {
 
-    public VampireEnchantment() {
+    public LifedrainEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentType.ARMOR_FEET, new EquipmentSlotType[] {EquipmentSlotType.FEET});
     }
 
@@ -42,8 +42,8 @@ public class VampireEnchantment extends Enchantment {
 
             Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(playerEntity.getHeldItemMainhand());
 
-            if (enchantments.containsKey(ModEnchantments.VAMPIRE_ENCHANTMENT)) {
-                int level = enchantments.get(ModEnchantments.VAMPIRE_ENCHANTMENT);
+            if (enchantments.containsKey(ModEnchantments.LIFEDRAIN_ENCHANTMENT)) {
+                int level = enchantments.get(ModEnchantments.LIFEDRAIN_ENCHANTMENT);
 
                 playerEntity.heal(0.5f * level + attackEvent.getAmount() * 0.289f);
             }
