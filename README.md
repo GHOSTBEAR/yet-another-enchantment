@@ -2,6 +2,11 @@
 I recommend using IntelliJ, mainly because it helps a lot with auto imports and code completion.
 But if you want to use Eclipse or another IDE you can do so.
 
+### Enchantments
+- Magic Damage
+- Stoneskin
+- Lifedrain 
+
 ### IntelliJ
 1. Open IDEA, and import project.
 2. Select your build.gradle file and have it import.
