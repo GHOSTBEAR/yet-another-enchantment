@@ -1,6 +1,7 @@
 package me.ghostbear.yetanotherenchantment.init;
 
 import me.ghostbear.yetanotherenchantment.Reference;
+import me.ghostbear.yetanotherenchantment.enchantment.DarkvisionEnchantment;
 import me.ghostbear.yetanotherenchantment.enchantment.MagicDamageEnchantment;
 import me.ghostbear.yetanotherenchantment.enchantment.StoneskinEnchantment;
 import me.ghostbear.yetanotherenchantment.enchantment.LifedrainEnchantment;
@@ -20,6 +21,7 @@ public class ModEnchantments {
 
     private static final List<Enchantment> ENCHANTMENTS = new ArrayList<>();
 
+    public static final Enchantment DARKVISION_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "darkvision_enchantment"), new DarkvisionEnchantment());
     public static final Enchantment LIFEDRAIN_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "lifedrain_enchantment"), new LifedrainEnchantment());
     public static final Enchantment STONESKIN_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "stoneskin_enchantment"), new StoneskinEnchantment());
     public static final Enchantment MAGIC_DAMAGE_ENCHANTMENT = register(new ResourceLocation(Reference.MOD_ID, "magic_damage_enchantment"), new MagicDamageEnchantment());

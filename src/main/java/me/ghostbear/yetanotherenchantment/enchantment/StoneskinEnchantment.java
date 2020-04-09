@@ -1,5 +1,6 @@
 package me.ghostbear.yetanotherenchantment.enchantment;
 
+import me.ghostbear.yetanotherenchantment.Reference;
 import me.ghostbear.yetanotherenchantment.init.ModEnchantments;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -10,9 +11,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.Map;
 
+@Mod.EventBusSubscriber(modid = Reference.MOD_ID)
 public class StoneskinEnchantment extends Enchantment {
 
     public StoneskinEnchantment() {
